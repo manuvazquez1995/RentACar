@@ -1,7 +1,5 @@
 package org.example.repository;
-
 import org.example.model.Client;
-
 import java.util.ArrayList;
 
 public class ClientRepository implements IClientRepository{

@@ -16,6 +16,12 @@ public class Car {
     }
 
 
+    public Car(String licensePlate, Model model){
+        this.licensePlate = licensePlate;
+        this.model = model;
+    }
+
+
     public Long getId() {
         return id;
     }
