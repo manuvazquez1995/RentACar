@@ -1,7 +1,7 @@
 package org.example.model;
 import java.util.Date;
 
-public abstract class Rental {
+public class Rental {
 
     private long id;
 
@@ -14,11 +14,12 @@ public abstract class Rental {
     private Client client;
 
 
-    public Rental (long id, Date startDate, Date endDate, Car car){
+    public Rental (long id, Date startDate, Date endDate, Car car, Client client){
         this.id = id;
         this.startDate = startDate;
         this.endDate = endDate;
         this.car = car;
+        this.client = client;
     }
 
 
@@ -42,7 +43,7 @@ public abstract class Rental {
         return endDate;
     }
 
-    public void getStartDate(Date endDate){
+    public void setEndDate(Date endDate){
         this.endDate = endDate;
     }
 

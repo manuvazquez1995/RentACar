@@ -2,6 +2,7 @@ package org.example.model;
 
 public class Model {
 
+    private Long id;
     private String name;
 
     private Integer pricePerDay;
@@ -10,6 +11,14 @@ public class Model {
     public Model(String name, Integer pricePerDay){
         this.name = name;
         this.pricePerDay = pricePerDay;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
