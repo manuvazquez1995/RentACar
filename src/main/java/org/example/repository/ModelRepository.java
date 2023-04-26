@@ -8,7 +8,6 @@ public class ModelRepository implements IModelRepository{
 
     public ModelRepository(){models = new ArrayList<>();}
 
-
     @Override
     public void add(Model model){
         model.setId(nextIdAvaliable());
